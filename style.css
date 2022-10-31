@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root {
+    --primary: linear-gradient(90deg, #C68F3A 3.65%, #9E6000 100%);
+    --primarySolid:#C68F3A;
+    --background: #ffffff;
+    --shadow:8px 8px 24px rgba(0, 0, 0, 0.25);
+    --shadowMild:8px 8px 24px rgba(0, 0, 0, 0.1);
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face {
+    font-family: DM;
+    src: url(fonts/DMSerifDisplay-Regular.ttf);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;    
+    background: var(--background);
+    overflow-x: hidden;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f4f4f4; 
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: var( --primarySolid); 
+    border-radius: 108px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background: #9E6000; 
+    cursor: url('https://apnbjdtser.cloudimg.io/hunar.design/assets/pointer.svg'), auto;
+  }
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: var(--primary);
+}
+  
+::selection {
+    color: white;
+    background: var(--primarySolid);
+}
+
+.heroSection{
+    transition: 600ms ease-in;
+
+    background: url("assets/HeroImage.webp");
+    height: 80vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    
+}
+
+.heroContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2vh;
+    padding: 4vw;
+    
+}
+
+
+.ilmaLogoLarge{
+    width: 10vw;
+}
+
+.IlmaFullform{
+    color: #ffffff;
+    width: 44vw;
+    text-align: center;
+    font-family: DM;
+    font-size: 3.25vw ;
+    /* outline: 1px solid white; */
+
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.subSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    width: 100vw;
+    padding: 3vw 0vw;
+    /* outline: 10px solid black; */
+    
+}
+.aboutSub{
+    background: url("assets/aboutPhoto.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 78vh;
+    width: 100vw;
+    /* outline: 10px solid gray; */
+}
+.sectionTitle{
+    font-size: 2vw;
+    font-family: DM;
+    padding: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutContainer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    /* outline: 10px solid black; */
+    
+    align-items: center;
+
+}
+.aboutSub{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2vw;
+    padding: 4vw;
+}
+.aboutText{
+    text-align: center;
+    width: 60vw;
+    font-size: 1.2vw;
+}
+.aboutNumbersSubtext{
+    font-size: 1.2vw;
+}
+.aboutNumbers{
+    display: flex;
+    gap:10vw;
+    align-items: center;
+}
+
+.aboutNumberContainer{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+span{
+    font-family: DM;    
+}
+.aboutNumbersHeader{
+    font-size: 3.5vw;
+}
+
+
+.applicationContainer{
+    display: flex;
+    justify-content: center;   
+    gap :2vw;
+    width: 80vw;
+    /* outline: solid black; */
+}
+.applicationCard{
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    width: 50vw;
+}
+.applicationImageContainer{
+    overflow: clip;
+    height: 25vh;
+    width: 20vw;
+}
+.applicationImage{
+    height: 14vw;
+    transition: 300ms ease-in;
+    filter: saturate(0.7);
+}
+.applicationImage:hover{
+    transform: scale(1.1);
+    filter: saturate(1.2);
+
+}
+.applicationContent{
+    padding:4%  4% ;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6vw;
+}
+.learnMore{
+    display: flex;
+}
+.applicationTitle{
+    font-family: DM;
+    font-size: 1.5vw;
+}
+.applicationText{
+    font-size: 0.8vw;
+}
+.arrowRight{
+    transition: 300ms ease-in;
+    padding-left: 0.25vw;
+
+}
+.applicationCard:hover .arrowRight{
+    padding-left: 0.5vw;
+}
+.newsletterContainer{
+    width: 100vw;
+    background: #000000;
+    color:White;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+    gap: 1vw;
+
+}
+
+.NewsletterTitle{
+    padding: 0%;
+}
+.sectionText{
+    width: 40vw;
+    text-align: center;
+}
+form{
+    display: flex;
+    gap: 1vw;
+
+}
+input[type="text" i] {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.25);
+    width: 25vw;
+    height: 2.5vw;
+    text-align: center;
+    border: none;
+    font-size: 1vw;
+    padding: 2%;
+}
+.subscribeButton{
+    cursor: pointer;
+    padding: 2% 6%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: var(--primary);
+}

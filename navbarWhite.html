@@ -1,0 +1,159 @@
+<div class="navBarContainer" id="navbar">
+    <a href="/">
+        <div class="navBarLogo">
+            <img src="assets/ilmaLogo.svg" loading="lazy" alt="logo" class="logo"/>
+        </div>
+    </a> 
+    <div class="navbuttons">
+            <div class="home links"><a href="/">Home</a></div>
+            <div class="about links"><a href="About">About</a></div>
+            <div class="events links"><a href="events">Events</a></div>
+            <div class="contact links"><a href="contact">Contact</a></div>
+            <div class="newsletter links"><a href="newsletter">Newsletter</a></div>
+            <div class="membership links"><a href="membership">Membership</a></div>
+    </div>               
+        <div class="menu"><a href="javascript:void(0);" class="icon" onclick="hideMenu()"><img src="assets/menu.svg" class="menuIcon"></a></div>
+</div>
+<style>
+    .darkNav{
+        
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(24px);
+
+    }
+    .menu{
+
+        display: none;
+
+    }
+    .navbar{
+
+        position: absolute;
+
+    }
+
+    .navBarContainer {
+        
+        z-index: 2;
+        animation: slideDown 600ms ease-in-out;
+        padding: 3% 12%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100vw;
+        position: fixed;
+        height: 8vh;
+        left: 0px;
+        top: 0px;
+        /* background: black; */
+        border-radius: var(--radius);
+
+   }
+
+    .navbuttons{
+        
+        font-size: 0.8vw;
+        font-weight: 600;
+        color: black;
+        width: max-content;
+        display: flex;
+        color: rgba(0, 0, 0, 0.4);
+        margin-right: 21%;
+   }
+   .navbuttons a {
+        color : rgba(255, 255, 255, 0.8);
+        font-weight: 400;
+    }
+    .navbuttons a:hover {
+        
+        color:rgba(255,255,255,1) !important;  
+    }
+
+   .links{
+        padding:3% 6%;
+        
+   }
+   .navBarLogo{
+        height: auto;
+   }
+   .logo{
+        width: 5.2vw !important;
+   }
+   .membership{
+        background: var(--primary);  
+        
+   }
+   .membership:hover{
+        background: var(--primarySolid);  
+        cursor: pointer;
+   }
+   @media screen and (max-width: 1600px) {
+        .navbuttons{
+            font-size: 1vw;    
+            margin-right: 25%;
+        }
+        .logo{
+            width: 10vw;
+        }
+    }
+    @media screen and (max-width: 991px) {
+        .navbuttons{
+            font-size: 1.4vw;    
+            margin-right: 36%;
+        }
+        .logo{
+            width: 14vw;
+        }
+    }
+    @media screen and (max-width: 550px) {
+    .navbuttons{
+        /* background-color: rgba(255, 255, 255, 0.4); */
+        padding-bottom: 2%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: 4.2vw;
+        flex-direction: column;
+    }
+    .logo{
+        width: 35vw;
+    }
+
+    .navBarContainer{
+        
+        
+        margin-top: 10% !important;
+        flex-direction: column;
+        height: max-content;
+        align-items: flex-start;
+        border-radius: 2vw;
+    }
+    .login{
+        
+        border-radius: 8px;
+    }
+    .menu{
+        display: block !important;
+        position: absolute;
+        right: 5vw;
+        top:6vw;
+
+    }
+    }
+</style>
+<script>
+    const mediaQuery = window.matchMedia('(min-width: 768px)')
+
+    if(!mediaQuery.matches){
+        $('.links').hide(); 
+    }
+
+     function hideMenu() {
+        if($('.links').css('display') == 'none'){ 
+            $('.links').show('slow'); 
+        } else { 
+            $('.links').hide('slow'); 
+        }
+
+    }
+</script>
