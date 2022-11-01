@@ -1,0 +1,90 @@
+@keyframes slideUp {
+    0% {
+      transform: translateY(50px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes slideRight {
+    0% {
+      transform: translate(-50px, 50px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translate(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes slideLeft {
+    0% {
+      transform: translate(150px, 0px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translate(0px, 0px);
+      opacity: 1;
+    }
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes zoomImage {
+    0% {
+      transform: scale(0.75);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes arrowBounce {
+    0% {
+      padding-left: 0%;
+    }
+    50% {
+      padding-left: 1.25%;
+    }
+    100% {
+      padding-left: 0%;
+    }
+  }
+  @keyframes upDown {
+    0% {
+      transform: translateY(-5px);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  

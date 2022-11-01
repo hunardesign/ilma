@@ -18,8 +18,25 @@
     font-family: DM;
     src: url(fonts/DMSerifDisplay-Regular.ttf);
 }
-
+.slideupAnimation{
+    animation: slideUp 750ms ease-in-out;
+}
+.loaderParent{
+    display: flex;
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: ease-out 2s;
+    animation:slideDown 300ms ease-in-out;
+  }
+  .loader{
+    position: absolute;
+    transform: translate(0%, 100%);
+  }
 body{
+    /* animation:fadeIn 600s ease-in; */
     font-family: 'Poppins', sans-serif;    
     background: var(--background);
     overflow-x: hidden;
@@ -71,6 +88,7 @@ body{
 }
 
 .heroContent{
+    animation: slideUp 600ms ease-in;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,7 +104,7 @@ body{
 
 .IlmaFullform{
     color: #ffffff;
-    width: 44vw;
+    width: 40vw;
     text-align: center;
     font-family: DM;
     font-size: 3.25vw ;
@@ -96,6 +114,9 @@ body{
 
 a{
     color: inherit;
+    text-decoration: none;
+}
+a:hover{
     text-decoration: none;
 }
 
@@ -182,9 +203,10 @@ span{
 .applicationCard{
     cursor: pointer;
     overflow: hidden;
-    box-shadow: var(--shadow);
     width: 50vw;
+    outline: 1px solid rgba(0, 0, 0, 0.1);
 }
+
 .applicationImageContainer{
     overflow: clip;
     height: 25vh;
@@ -195,9 +217,14 @@ span{
     transition: 300ms ease-in;
     filter: saturate(0.7);
 }
-.applicationImage:hover{
+.applicationCard:hover .applicationImage{
     transform: scale(1.1);
     filter: saturate(1.2);
+
+}
+.applicationCard:hover{
+    box-shadow: var(--shadowMild);
+    outline: none;
 
 }
 .applicationContent{
@@ -207,6 +234,7 @@ span{
     gap: 0.6vw;
 }
 .learnMore{
+    font-size: 0.8vw;
     display: flex;
 }
 .applicationTitle{
@@ -240,28 +268,238 @@ span{
     padding: 0%;
 }
 .sectionText{
-    width: 40vw;
+    width: 30vw;
     text-align: center;
+    font-size: 0.8vw;
 }
 form{
     display: flex;
     gap: 1vw;
 
 }
-input[type="text" i] {
-    color: white;
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="email" i],input[type="text" i],input[type="number" i] {
     background-color: rgba(255, 255, 255, 0.25);
     width: 25vw;
-    height: 2.5vw;
+    height: 2.8vw;
+    text-align: center;
+    border: none;
+    font-size: 1vw;
+    padding: 2%;
+    -moz-appearance: textfield;
+}
+textarea {
+    
+    background-color: rgba(255, 255, 255, 0.25);
+    width: 25vw;
+    height: 8vw;
     text-align: center;
     border: none;
     font-size: 1vw;
     padding: 2%;
 }
-.subscribeButton{
+input[type="email" i]{
+    color: white;
+}
+.sendMail{
+    width: 10vw;
+}
+.sendMail,.subscribeButton{
+    font-size: 1vw;
     cursor: pointer;
     padding: 2% 6%;
     font-family: 'Poppins', sans-serif;
     color: white;
     background: var(--primary);
+    border: none;
+}
+.bottomGoldLine{
+    padding: 0.5vw;
+    width: 4vw;
+}
+.carousel-control.right,.carousel-control.left{
+    background: none !important;
+}
+.carousel-indicators .active{
+    background:var(--primarySolid);
+}
+
+.carousel-indicators li{
+    border: none;
+    background: white;
+}
+.testimonialContainer{
+    
+    width: 100vw;
+    background: url("assets/testimonialsBg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.item{
+
+    padding: 5vw;
+}
+.testimonialsCard{
+    display: flex;
+    align-items: center;
+    /* background-color: rgba(255, 255, 255, 0.25); */
+}
+
+.testimonailProfile{
+    display: flex;
+    flex-direction: column;
+    padding: 1vw;    
+    /* outline: 1px solid white; */
+}
+.testimonialPhotoContainer{
+    width: 12vw;
+    height: 12vw;
+    overflow: clip;
+    border-radius: 50%;
+}
+.testimonialsCard:hover .testimonialPhoto{
+    
+    transform: scale(1.1);
+
+}
+.testimonialPhoto{
+    transition: 300ms ease-in;
+    
+}
+.testimonialNameNCompany{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.testmonialName{
+    color:white;
+    font-size: 1vw;
+}
+.testimonialCompany,.testimonialTextSub{
+    font-size: 0.8vw;
+    color: rgba(255, 255, 255, 0.6);
+}
+.testimonialText{
+    padding: 1vw;    
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+
+}
+
+.testimonialTextTitle{
+    font-size: 1vw;
+    color: white;
+}
+.eventContainer{
+    display: flex;
+    gap: 4vw;
+}
+.eventImageContainer{
+    height: 40vh;
+    width: 30vw;
+    /* outline: 10px solid black; */
+    display: flex;
+    align-items:end;
+    cursor: pointer;
+    transition: 300ms ease-in;
+
+}
+#seventhAnnualConference{
+    background: url("assets/7th\ Annual\ Conference.webp");
+    background-position: center;
+
+}
+#AwardCeremony{
+    background: url("assets/Award\ Ceremony.webp");
+    background-position: center;
+}
+.eventDescription{
+    background: rgba(255, 255, 255, 0.6);
+    padding:1vw ;
+    margin: 1vw;
+    backdrop-filter: blur(24px);
+    transition: 300ms ease-in;
+}
+.eventTitle{
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+.eventDate{
+    font-size: 0.8vw;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+}
+.eventDetails{
+    display: none;
+}
+.eventImageContainer:hover .eventDetails{
+    display: block;
+
+}
+.eventImageContainer:hover{
+    box-shadow: var(--shadow);
+    cursor: url('assets/viewCursor.svg'),auto;
+
+}
+.swal-button{
+    background-color: #C68F3A;
+  }
+  .swal-button:not([disabled]):hover{
+    background-color: #9E6000;
+  }
+
+.contactFormContainer{
+    padding: 1vw;
+    box-shadow: var(--shadowMild);
+}
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formElement{
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.contactContainer{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.mapsEmbed{
+    height: auto;
+    width: 40vw;
+}
+.contactDetailsContainer{
+    display: flex;
+    margin: 1vw 0vw;
+    padding: 1vw;
+    gap: 1vw;
+}
+.contactDetailCard{
+    width: 100%;
+    background: #FFF4E2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    cursor: pointer;
+    font-size: 0.8vw;
+}
+.contactDetailCard *{
+    padding: 0.5vw;
+}
+.contactIcons{
+    
+    height: 2.5vw;
+    width: 2.5vw;
+}
+.contactTitle{
+    font-size: 1.5vw;
+    padding: 2vw;
 }
