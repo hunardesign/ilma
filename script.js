@@ -6,9 +6,9 @@ function run(){
     //     console.log('images loaded')
     //     setTimeout(removeLoader, 1500);
     //   });
-    imagesLoaded( document.querySelector('.container'), function( instance ) {
+    imagesLoaded( document.querySelector('.content'), function( instance ) {
         console.log('all images are loaded');
-        setTimeout(removeLoader, 1500);
+        setTimeout(removeLoader, 500);
       });
  }
 
@@ -21,16 +21,32 @@ function run(){
     content.style.display = 'block';
     
 }
-/* Replacing navbar div with navbar code which allows reusability */ 
+/* Replacing div with code which allows reusability */ 
 
-$.get("navbarWhite.html", function(data){
+$.get("../navbarComponent.html", function(data){
     $(".navbar").replaceWith(data);
 });
 
-/* Replacing navbar div with navbar code which allows reusability */ 
+/* Replacing div with code which allows reusability */ 
 
-$.get("footer.html", function(data){
+$.get("../footerComponent.html", function(data){
     $(".footer").replaceWith(data);
+});
+
+/* Replacing div with code which allows reusability */ 
+$.get("../aboutComponent.html", function(data){
+  $(".aboutUs").replaceWith(data);
+});
+
+
+/* Replacing div with code which allows reusability */ 
+$.get("../eventComponent.html", function(data){
+  $(".eventSection").replaceWith(data);
+});
+
+/* Replacing div with code which allows reusability */ 
+$.get("../contactComponent.html", function(data){
+  $(".contactSection").replaceWith(data);
 });
 
 /*Changing Navbar based on scroll location*/ 

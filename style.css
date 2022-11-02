@@ -21,20 +21,7 @@
 .slideupAnimation{
     animation: slideUp 750ms ease-in-out;
 }
-.loaderParent{
-    display: flex;
-    margin: 0%;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    transition: ease-out 2s;
-    animation:slideDown 300ms ease-in-out;
-  }
-  .loader{
-    position: absolute;
-    transform: translate(0%, 100%);
-  }
+
 body{
     /* animation:fadeIn 600s ease-in; */
     font-family: 'Poppins', sans-serif;    
@@ -77,7 +64,7 @@ body{
 .heroSection{
     transition: 600ms ease-in;
 
-    background: url("assets/HeroImage.webp");
+    background: url("../assets/HeroImage.webp");
     height: 80vh;
     background-size: contain;
     background-repeat: no-repeat;
@@ -130,14 +117,7 @@ a:hover{
     /* outline: 10px solid black; */
     
 }
-.aboutSub{
-    background: url("assets/aboutPhoto.webp");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 78vh;
-    width: 100vw;
-    /* outline: 10px solid gray; */
-}
+
 .sectionTitle{
     font-size: 2vw;
     font-family: DM;
@@ -147,50 +127,11 @@ a:hover{
     align-items: center;
 }
 
-.aboutContainer{
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    /* outline: 10px solid black; */
-    
-    align-items: center;
 
-}
-.aboutSub{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 2vw;
-    padding: 4vw;
-}
-.aboutText{
-    text-align: center;
-    width: 60vw;
-    font-size: 1.2vw;
-}
-.aboutNumbersSubtext{
-    font-size: 1.2vw;
-}
-.aboutNumbers{
-    display: flex;
-    gap:10vw;
-    align-items: center;
-}
-
-.aboutNumberContainer{
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 span{
     font-family: DM;    
 }
-.aboutNumbersHeader{
-    font-size: 3.5vw;
-}
+
 
 
 .applicationContainer{
@@ -278,8 +219,7 @@ form{
 
 }
 input::-webkit-outer-spin-button,input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+      margin: 0;
 }
 input[type="email" i],input[type="text" i],input[type="number" i] {
     background-color: rgba(255, 255, 255, 0.25);
@@ -289,7 +229,7 @@ input[type="email" i],input[type="text" i],input[type="number" i] {
     border: none;
     font-size: 1vw;
     padding: 2%;
-    -moz-appearance: textfield;
+   
 }
 textarea {
     
@@ -334,7 +274,7 @@ input[type="email" i]{
 .testimonialContainer{
     
     width: 100vw;
-    background: url("assets/testimonialsBg.webp");
+    background: url("../assets/testimonialsBg.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -394,112 +334,132 @@ input[type="email" i]{
     font-size: 1vw;
     color: white;
 }
-.eventContainer{
-    display: flex;
-    gap: 4vw;
-}
-.eventImageContainer{
-    height: 40vh;
-    width: 30vw;
-    /* outline: 10px solid black; */
-    display: flex;
-    align-items:end;
-    cursor: pointer;
-    transition: 300ms ease-in;
 
-}
-#seventhAnnualConference{
-    background: url("assets/7th\ Annual\ Conference.webp");
-    background-position: center;
-
-}
-#AwardCeremony{
-    background: url("assets/Award\ Ceremony.webp");
-    background-position: center;
-}
-.eventDescription{
-    background: rgba(255, 255, 255, 0.6);
-    padding:1vw ;
-    margin: 1vw;
-    backdrop-filter: blur(24px);
-    transition: 300ms ease-in;
-}
-.eventTitle{
-    font-size: 1.5vw;
-    font-weight: 600;
-}
-.eventDate{
-    font-size: 0.8vw;
-    font-weight: 600;
-    color: rgba(0, 0, 0, 0.6);
-}
-.eventDetails{
-    display: none;
-}
-.eventImageContainer:hover .eventDetails{
-    display: block;
-
-}
-.eventImageContainer:hover{
-    box-shadow: var(--shadow);
-    cursor: url('assets/viewCursor.svg'),auto;
-
-}
 .swal-button{
     background-color: #C68F3A;
   }
-  .swal-button:not([disabled]):hover{
-    background-color: #9E6000;
-  }
+.swal-button:not([disabled]):hover{
+background-color: #9E6000;
+}
 
-.contactFormContainer{
+.personContainer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap:3vw;
+    justify-items: end;
+
+
+}
+.person{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: end;
     padding: 1vw;
+    height: 20vw;
+    width: 15vw;
+    /* border:1px solid; */
+}
+.person:hover{
     box-shadow: var(--shadowMild);
 }
-.contactForm{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.personName{
+    font-size: 1.1vw;
+    color: white;
 }
-
-.formElement{
-    border: 1px solid rgba(0, 0, 0, 0.1) !important;
-}
-
-.contactContainer{
-    display: flex;
-    flex-direction: row-reverse;
-}
-.mapsEmbed{
-    height: auto;
-    width: 40vw;
-}
-.contactDetailsContainer{
-    display: flex;
-    margin: 1vw 0vw;
-    padding: 1vw;
-    gap: 1vw;
-}
-.contactDetailCard{
-    width: 100%;
-    background: #FFF4E2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1vw;
-    cursor: pointer;
+.personPosition{
     font-size: 0.8vw;
+    color: rgba(255, 255, 255, 0.8);
 }
-.contactDetailCard *{
-    padding: 0.5vw;
+.VikasAgarwal{
+    background: url("assets/Vikas\ Agarwal.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.contactIcons{
-    
-    height: 2.5vw;
-    width: 2.5vw;
+.KrupeshThakkar{
+    background: url("assets/Krupesh\ Thakkar.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.contactTitle{
-    font-size: 1.5vw;
-    padding: 2vw;
+.SurinderPalArora{
+    background: url("assets/Surinder\ Pal\ Arora.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.AmritPatel{
+    background: url("assets/Amrit\ Patel.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.AjayJain{
+    background: url("assets/Ajay\ Jain.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.JagdishAhuja{
+    background: url("assets/Jagdish\ Ahuja.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.AtulPatel{
+    background: url("assets/Atul\ Patel.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.BijayDokania{
+    background: url("assets/Bijay\ Dokania.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.JituNandu{
+    background: url("assets/Jitu\ Nandu.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.MaheshSavalia{
+    background: url("assets/Mahesh\ Savalia.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.RKVyas{
+    background: url("assets/R\ K\ Vyas.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.KhusbooModi{
+    background: url("assets/Khusboo\ Modi.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.missionContainer{
+    display: flex;
+    gap: 4vw;
+}
+
+.missionObjectiveCard{
+    display: flex;
+    gap: 1vw;
+    box-shadow: var(--shadowMild);
+}
+.missionObjectiveTitle{
+    font-size: 1.8vw;
+    font-family: DM;
+}
+.missionObjectiveContainer{
+    padding: 1vw;
+    gap: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.missionObjectiveSub{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.8vw;
+    width: 25vw;
+}
+.objectiveContainer{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 4vw;
 }

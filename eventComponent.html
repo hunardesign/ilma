@@ -1,0 +1,80 @@
+<div class="subSection">
+                
+    <div class="sectionTitle">ILMA Events <img src="../assets/goldLine.svg" class="bottomGoldLine"></div>
+
+    <div class="eventContainer ">
+        
+        <div class="eventImageContainer" id="seventhAnnualConference">
+            <div class="eventDescription">
+                <div class="eventTitle">7th Annual Conference</div>
+                <div class="eventDate">24th July 21</div>
+                <div class="eventDetails">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+            </div>
+        </div>
+
+        <div class="eventImageContainer" id="AwardCeremony">
+            <div class="eventDescription">
+                <div class="eventTitle">Award Ceremony</div>
+                <div class="eventDate">26th Sept 22</div>
+                <div class="eventDetails">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+            </div>
+        </div>
+        
+
+    </div>
+    
+</div>
+
+<style>
+.eventContainer{
+    display: flex;
+    gap: 4vw;
+}
+.eventImageContainer{
+    height: 40vh;
+    width: 30vw;
+    /* outline: 10px solid black; */
+    display: flex;
+    align-items:end;
+    cursor: pointer;
+    transition: 300ms ease-in;
+
+}
+#seventhAnnualConference{
+    background: url("../assets/7th\ Annual\ Conference.webp");
+    background-position: center;
+
+}
+#AwardCeremony{
+    background: url("../assets/Award\ Ceremony.webp");
+    background-position: center;
+}
+.eventDescription{
+    background: rgba(255, 255, 255, 0.6);
+    padding:1vw ;
+    margin: 1vw;
+    backdrop-filter: blur(24px);
+    transition: 300ms ease-in;
+}
+.eventTitle{
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+.eventDate{
+    font-size: 0.8vw;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.6);
+}
+.eventDetails{
+    display: none;
+}
+.eventImageContainer:hover .eventDetails{
+    display: block;
+
+}
+.eventImageContainer:hover{
+    box-shadow: var(--shadow);
+    cursor: url('assets/viewCursor.svg'),auto;
+
+}
+</style>
