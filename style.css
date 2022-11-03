@@ -463,3 +463,33 @@ background-color: #9E6000;
     grid-template-columns: auto auto;
     gap: 4vw;
 }
+.eventCard{
+    color: white;
+    display: flex;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: end;
+}
+.sixthSept22{
+    padding: 4vw;
+    height: 75vh;
+    width: 100vw;
+    background-size: contain;
+    background: url(../assets/sixthSept22.webp);
+}
+.eventCardTitle{
+    font-size: 3.5vw;
+    font-weight: 600;
+    line-height: 80%;
+
+}
+.eventCardTitle2{
+    font-size: 2vw;   
+}
+.eventCardDate{
+    font-size: 1vw;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.6);
+}

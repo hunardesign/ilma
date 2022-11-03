@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <!-- ILMA Favicon -->
+        <link rel="icon" type="image/png" sizes="32*32" href="../assets/favicon.png">
+        
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="title" content="ILMA - Home | Indian Laminate Manufacturer's Association">
+        <meta name="description" content="Indian Laminate Manufacturer's Association is 24 year old corporation proividing membership benifits in forms of resources, manpower and latest information in the field of Laminate and other similar ventures">
+        <meta name="Keywords" content="ILMA,Shehnai,Indian Laminate Manufacturer's Association,Laminate,Laminate Association,Laminate Manufacturer's Association,indian Laminate,Association,ILMA website">
+        <meta name="robots" content="index, follow">
+        <meta name="language" content="English">
+        <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <div class="loaderParent">
+            <lottie-player src="../assets/loader.json" background="transparent" speed="0.5" style="width: 200px; height: 200px;" loop autoplay class="loader"></lottie-player>
+        </div>
+        <style>
+            .loaderParent{
+                display: flex;
+                margin: 0%;
+                height: 100%;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                transition: ease-out 2s;
+                animation:slideDown 300ms ease-in-out;
+            }
+            .loader{
+                position: absolute;
+                transform: translate(0%, 100%);
+            }
+            /* .navBarContainer{  
+                background: rgba(0, 0, 0, 0.4);
+                backdrop-filter: blur(24px);
+            } */
+            .aboutSub{
+                animation: slideUp 600ms ease-in;
+
+            }
+            </style>
+        <!-- Website Title -->
+        <title>ILMA | Indian Laminate  Manufacturer's Association</title>
+
+    </head>
+   
+    <body onload="run()">
+        <div  class="content" style="display: none;">
+            
+            <!-- Navbar Section -->
+            <div class="navbar"></div>
+          
+            <!-- Staff Section -->
+            <div class="becomeMember">
+                <div class="subContainer">
+                    <div class="sectionTitle">Why Become A Member?<img src="../assets/goldLine.svg" class="bottomGoldLine"></div>
+                    <div class="subtextContainer">
+                        <div class="subtext">The Association's membership has numerous directly and indirectly advantages and at ILMA, we don't consider the Membership fees as a fee rather an Investment made by the Member company.</div>
+                        <div class="subtext">The Association is governed by one of the best intellectuals of the Laminate Industry across the world and they bring out the best on the table to promote the Indian Laminate Industry on a global scale.</div>
+                        <div class="subtext">The Association's membership provides the common development for the growth of the Industry along with providing new and improved means and techniques of the productions and brand enhancement from time to time.</div>
+                        <div class="subtext">The Association forms various subcommittees from time to time discuss and address the areas like taxation, custom/ excise regulations, membership, technology, innovation, arbitration and much more.</div>
+                        <div class="subtext">These committees are comprised of Industry's Leaders/ Veterans and Young Minds. The Association hosts a number of national meetings across India at regular intervals to provide the common platform for the introduction of new technology, ideas or discuss the matters fruitful to the betterment of the Industry. </div>
+                        <div class="subtext">These meetings are usually hosted by the Industry leaders along with expert speakers of the particular technology.
+                            The national meetings offer a unique opportunity to build the strong and scalable network with other members of the Association.</div>        
+                    </div>
+                    
+                </div>
+            </div>
+
+                <!-- Staff Section -->
+            <div class="subSection members">
+                    <div class="sectionTitle">Our Top Members<img src="../assets/goldLine.svg" class="bottomGoldLine"></div>
+                    <div class="twoCrossgrid">
+                        <img class="rushil" src="../assets/rushil.webp">
+                        <img class="safe" src="../assets/safe.webp">
+                        <img class="greenlam" src="../assets/greenlam.webp">
+                        <img class="purbanchal" src="../assets/purbanchal.webp">
+                        <img class="century" src="../assets/century.webp">
+                        <img class="virgo" src="../assets/virgo.webp">
+                        <img class="asis" src="../assets/asis.webp">
+                        <img class="merino" src="../assets/merino.webp">
+                    </div>
+            </div>
+            <div class="subSection">
+                <div class="sectionTitle">Downloads<img src="../assets/goldLine.svg" class="bottomGoldLine"></div>
+                <div class="downloadContainer">
+                    <div class="downloadButton"> ILMA Membership Application </div>
+                    <div class="downloadButton">Distributor Registration Form</div>
+                    <div class="downloadButton"> Guidelines to Avoid Bubbles</div>
+                    <div class="downloadButton">Guidelines for High Quality Laminates</div>
+                    <div class="downloadButton">Important Materials Document</div>
+                    <div class="downloadButton">Chemical Circular</div>
+                </div>
+        </div>
+             <!-- Footer Section -->
+             <div class="footer"></div>
+        
+        </div>
+           
+        
+        
+    </body>
+</html>
+
+<style>
+.becomeMember{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    
+    padding: 0 !important;
+    background: url("../assets/membership.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sectionTitle{
+    padding:1vw !important
+}
+.subContainer{
+    width: 60vw;
+    margin: 6vw;
+    padding:2vw ;
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(24px);
+}
+.subtextContainer{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap :1vw;
+}
+.subtext{
+    font-size: 0.8vw;
+    padding: 0.5vw;
+    text-align: justify;
+}
+.members{
+    padding: 3vw 3vw;
+}
+.downloadContainer,.twoCrossgrid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2vw;
+}
+.twoCrossgrid *{
+    padding: 1vw;
+}
+.downloadContainer *{
+    padding: 1vw;
+}
+.twoCrossgrid{
+    justify-items: center;
+
+}
+.downloadContainer{
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: stretch;
+
+}
+.downloadButton{
+    width: fit-content;
+    color: #C68F3A;
+    font-size: 0.85vw;
+    border: 1.5px solid #C68F3A;
+    transition: 300ms ease-in;
+}
+.downloadButton:hover{
+    cursor: pointer;
+    background: #C68F3A;
+    color:white;
+    box-shadow: var(--shadowMild);
+}
+</style>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="../script.js"></script>
+<link rel="stylesheet" type="text/css" href="../style.css">
+<link rel="stylesheet" type="text/css" href="../animation.css">
