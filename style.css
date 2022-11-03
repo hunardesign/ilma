@@ -64,7 +64,7 @@ body{
 .heroSection{
     transition: 600ms ease-in;
 
-    background: url("../assets/HeroImage.webp");
+    background: url("/assets/HeroImage.webp");
     height: 80vh;
     background-size: contain;
     background-repeat: no-repeat;
@@ -274,7 +274,7 @@ input[type="email" i]{
 .testimonialContainer{
     
     width: 100vw;
-    background: url("../assets/testimonialsBg.webp");
+    background: url("/assets/testimonialsBg.webp");
     background-repeat: no-repeat;
     background-size: cover;
 }
