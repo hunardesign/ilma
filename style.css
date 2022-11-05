@@ -505,6 +505,9 @@ background-color: #9E6000;
 }
 
 @media screen and (max-width: 550px) {
+    .mobile15{
+        margin-top: 15vw;
+      }
     .heroSection{
         height: 50vh;
         background-size: cover;
@@ -641,5 +644,54 @@ background-color: #9E6000;
     }
     .newsletterContainer{
         gap: 4vw;
+    }
+    .personContainer{
+        grid-template-columns: auto ;
+    }
+    .person{
+        height: 95vw;
+        width: 90vw;
+        padding: 4vw;
+    }
+    .personName{
+        font-size: 5vw;
+    }
+    .personPosition{
+        font-size: 4vw;
+    }
+    .missionContainer{
+        flex-direction: column;
+    }
+    .missionObjectiveCard{
+        gap: 3vw;
+        flex-direction: column;
+        width: 90vw;
+        /* height: 60vh; */
+    }
+    .missionObjectiveContainer{
+        padding: 0vw 4vw 4vw;
+    }
+    .missionObjectiveTitle{
+        font-size: 6vw;
+    }
+    .missionObjectiveSub{
+        font-size: 4vw;
+        width: 80vw;
+        text-align: justify;
+    }
+    .objectiveContainer{
+        grid-template-columns: auto;
+    }
+    .eventCard{
+        padding: 0vw 0vw 10vw 5vw;
+    }
+    .eventCardTitle{
+        font-size: 8vw;
+    }
+    .eventCardTitle2{
+        font-size: 4.5vw;   
+    }
+    .eventCardDate{
+        font-size: 3vw;
     }
 }
