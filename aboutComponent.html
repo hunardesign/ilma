@@ -33,7 +33,7 @@
 
 <style>
   
-    .aboutSub{
+.aboutSub{
     background: url("../assets/aboutPhoto.webp");
     background-size: contain;
     background-repeat: no-repeat;
@@ -81,5 +81,42 @@
 }
 .aboutNumbersHeader{
     font-size: 3.5vw;
+}
+
+@media screen and (max-width: 550px) {
+    .aboutSub{
+        background-color: black;
+        background-image: url("../assets/aboutMobile.webp");
+        height: 72vh;
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+        /* outline: 1px dashed red; */
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: end;
+        align-items: center;
+        
+    }
+    .aboutText{
+        width: 85vw;
+        text-align: justify;
+    }
+    .aboutText{
+        font-size: 4vw;
+        
+        font-weight: 300;
+    }
+    .aboutNumbersSubtext{
+        font-size: 4vw;
+        color: rgba(255,255,255,0.6);
+        font-weight: 300;
+    }
+    .aboutNumbersHeader{
+        font-size: 8vw;
+    }
+
+
+
 }
 </style>

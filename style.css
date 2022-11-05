@@ -307,6 +307,8 @@ input[type="email" i]{
 }
 .testimonialPhoto{
     transition: 300ms ease-in;
+    width: 12vw;
+    height: 12vw;
     
 }
 .testimonialNameNCompany{
@@ -492,4 +494,152 @@ background-color: #9E6000;
     font-size: 1vw;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 1600px) {
+    
+}
+
+@media screen and (max-width: 991px) {
+
+}
+
+@media screen and (max-width: 550px) {
+    .heroSection{
+        height: 50vh;
+        background-size: cover;
+        background-position: right;
+
+    }
+    .ilmaLogoLarge{
+        width: 25vw;
+    }
+    .IlmaFullform{
+        font-size: 5.8vw;
+        width: 80vw;
+    }
+    .sectionTitle{
+        font-size: 6vw;
+        padding: 5vw;
+
+    }
+    .bottomGoldLine{
+        width: 12vw;
+    }
+    
+    .applicationContainer{
+        flex-direction: column;
+        width: 80vw;
+        gap: 5vw;
+    }
+    .applicationCard{
+        width: 80vw;
+    }
+    .applicationContent{
+        gap: 4vw;
+    }
+    .applicationImageContainer{
+        height: 25vh;
+        width: 80vw;
+    }
+    .applicationImage{
+        height: 80vw;
+        width: 80vw;
+        
+    }
+    .applicationTitle{
+        font-size: 6vw;
+    }
+    .applicationText{
+        font-size: 4vw;
+    }
+    .learnMore{
+        font-size: 4vw;
+    }
+    .arrowRight{
+        padding-left: 2vw !important;
+    }
+    .testimonialContainer{
+        height:60vh;
+    }
+    .testimonialsCard{
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+    .testimonailProfile{
+        padding: 5vw 0vw ;    
+        flex-direction: row;
+        align-items: center;
+        gap: 5vw;
+    }
+    .testimonialPhotoContainer{
+        width: 18vw;
+        height: 18vw;
+        /* outline: 1px dashed white; */
+        
+    }
+    .testimonialPhoto{
+        width: 18vw;
+        height: 18vw;
+    }
+    .testmonialName{
+        font-size: 4vw;
+    }
+    .testimonialCompany,.testimonialTextSub{
+        font-size: 4vw;
+    }
+    .testimonialNameNCompany{
+        align-items: start;
+    }
+    .testimonialTextTitle{
+        font-size: 5vw;
+    }
+    .testimonialText{
+        width: 85vw; 
+    }
+    .left,.right{
+        display: none;
+    }
+    .sectionText{
+        font-size: 4vw;
+        width: 80vw;
+        text-align: justify;
+    }
+    .NewsletterTitle{
+        padding: 0vw;
+    }
+    input[type="email" i],input[type="text" i],input[type="number" i] {
+        width: 80vw;
+        height: 12vw;
+        font-size: 4vw;
+        padding: 2%;
+       
+    }
+    textarea {
+        width: 80vw;
+        height: 40vw;
+        font-size: 4vw;
+        padding: 2%;
+    }
+   form{
+        display: flex;
+        flex-direction: column;
+        gap: 4vw;
+
+   }
+    .sendMail{
+        width: 80vw;
+    }
+    .sendMail,.subscribeButton{
+        font-size: 4vw;
+        cursor: pointer;
+        padding: 2% 6%;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        background: var(--primary);
+        border: none;
+    }
+    .newsletterContainer{
+        gap: 4vw;
+    }
 }

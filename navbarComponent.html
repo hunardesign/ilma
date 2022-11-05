@@ -2,6 +2,7 @@
     <a href="/">
         <div class="navBarLogo">
             <img src="/../assets/ilmaLogo.svg" loading="lazy" alt="logo" class="logo"/>
+            <img src="/../assets/ilmaLogo.svg" loading="lazy" alt="logo" class="logoMobile"/>
         </div>
     </a> 
     <div class="navbuttons">
@@ -9,12 +10,15 @@
             <div class="about links"><a href="/about">About</a></div>
             <div class="events links"><a href="/events">Events</a></div>
             <div class="contact links"><a href="/contact">Contact</a></div>
-            <div class="newsletter links"><a href="/#newsletter">Newsletter</a></div>
+            <div class="newsletter links" onclick="hideMenu()"><a href="/#newsletter">Newsletter</a></div>
             <div class="membership links"><a href="/membership">Membership</a></div>
     </div>               
         <div class="menu"><a href="javascript:void(0);" class="icon" onclick="hideMenu()"><img src="/../assets/menu.svg" class="menuIcon"></a></div>
 </div>
 <style>
+    .logoMobile{
+        display: none;
+    }
     .darkNav{
         
         background: rgba(0, 0, 0, 0.4);
@@ -108,7 +112,7 @@
     @media screen and (max-width: 550px) {
     .navbuttons{
         /* background-color: rgba(255, 255, 255, 0.4); */
-        padding-bottom: 2%;
+        padding: 10vw 0vw 4vw 0vw;
         width: 100%;
         align-items: center;
         justify-content: center;
@@ -116,17 +120,24 @@
         flex-direction: column;
     }
     .logo{
-        width: 35vw;
+      
+        display: none;
+    }
+    .logoMobile{
+        display: block;
+        height: 8vw;
+        position: absolute;
+        left: 5vw;
+        top:6vw;
     }
 
-    .navBarContainer{
-        
-        
-        margin-top: 10% !important;
+    .navBarContainer{        
         flex-direction: column;
         height: max-content;
+        padding: 2vw;
         align-items: flex-start;
-        border-radius: 2vw;
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(24px);
     }
     .login{
         
@@ -138,6 +149,10 @@
         right: 5vw;
         top:6vw;
 
+    }
+    .links{
+        width: 60vw;
+        text-align: center;
     }
     }
 </style>
@@ -151,9 +166,11 @@
      function hideMenu() {
         if($('.links').css('display') == 'none'){ 
             $('.links').show('slow'); 
-        } else { 
+
+        } else if(!mediaQuery.matches) { 
             $('.links').hide('slow'); 
         }
 
     }
+    
 </script>

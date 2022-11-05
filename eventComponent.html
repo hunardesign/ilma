@@ -9,6 +9,8 @@
                 <div class="eventTitle">7th Annual Conference</div>
                 <div class="eventDate">24th July 21</div>
                 <div class="eventDetails">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+                
+
             </div>
         </div>
 
@@ -17,6 +19,7 @@
                 <div class="eventTitle">Award Ceremony</div>
                 <div class="eventDate">26th Sept 22</div>
                 <div class="eventDetails">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+                
             </div>
         </div>
         
@@ -76,5 +79,30 @@
     box-shadow: var(--shadow);
     cursor: url('../assets/viewCursor.svg'),auto;
 
+
 }
+@media screen and (max-width: 550px) {
+    .eventContainer{
+        flex-direction: column;
+    }
+    .eventImageContainer{
+        width: 85vw;
+    }
+    .eventTitle{
+        font-size: 6vw;
+    }
+    .eventDate{
+        font-size: 4vw;
+    }
+    .eventDescription{
+        padding: 4vw;
+    }
+    .viewEventButton{
+
+        display: block;
+        height: 5vh;
+        width: 8vw;
+    }
+}
+
 </style>

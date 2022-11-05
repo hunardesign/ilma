@@ -8,7 +8,7 @@ function run(){
     //   });
     imagesLoaded( document.querySelector('.content'), function( instance ) {
         console.log('all images are loaded');
-        setTimeout(removeLoader, 2500);
+        setTimeout(removeLoader, 500);
       });
  }
 

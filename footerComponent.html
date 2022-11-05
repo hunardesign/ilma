@@ -1,6 +1,8 @@
 <div class="footer">
     <div class="footerlogo">
         <img src="../assets/ilmaLogo.svg" class="logo">
+        <img src="../assets/ilmaLogo.svg" class="logoFooter">
+
     </div>
     <div class="footersub">
         <div class="footerTitle">Important Links</div>
@@ -30,6 +32,9 @@
 </div>
 
 <style>
+   .logoFooter{
+    display: none;
+   }
     .footer{
         width: 100vw;
         background: var(--primary);
@@ -52,6 +57,39 @@
     .footerlinks:hover{
         color:white;
         cursor: pointer;
+    }
+    @media screen and (max-width: 550px) {
+        .footer{
+            
+            flex-direction: column;
+            gap: 5vw;
+            padding: 5vw 10vw;
+        }
+        .footerTitle,.footerlinks{
+            font-size: 4vw;
+        }
+        .footerTitle{
+            font-weight: 400;
+        }
+        .footersub{
+            display: flex;
+            flex-direction: column;
+            gap: 2vw;
+        }
+        .logo{
+            display: none;
+        }
+        .logoFooter{
+            display: block;
+            height: 24vw;
+            width: 24vw;
+        }
+        .footerlogo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 85vw;
+        }
     }
     
 </style>
