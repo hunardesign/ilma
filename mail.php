@@ -35,7 +35,7 @@ try {
 
     //Recipients
     $mail->setFrom('contact@ilma.hunardesign.in', 'ILMA');
-    $mail->addAddress('99sbhojak@gmail.com', 'Smith Bhojak');     //Add a recipient //Name is optional
+    $mail->addAddress('bhojaksmith00@gmail.com', 'Smith Bhojak');     //Add a recipient //Name is optional
     
 
     // //Attachments
