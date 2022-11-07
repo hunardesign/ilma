@@ -1,13 +1,14 @@
+
 <div class="subSection mobile15">
 
     <div class="sectionTitle">Get in Touch<img src="../assets/goldLine.svg" class="bottomGoldLine"></div>
         <div class="contactContainer">
             <div class="contactFormContainer">
                 <div class="contactTitle">Always ready to help you</div>
-                <form action="mail.php" method="post" class="contactForm">
+                <form action="../mail.php" method="post" class="contactForm">
                     <input required type="text" class="formElement" id="name" placeholder="Enter Your Name" name="name" value=""/>
-                    <input required type="number" class="formElement" id="number" placeholder="Enter Your Number" name="name" value=""/>
-                    <input required type="text" class="formElement" id="email" placeholder="Enter Your Email" name="name" value=""/>
+                    <input required type="number" class="formElement" id="number" placeholder="Enter Your Number" name="number" value=""/>
+                    <input required type="text" class="formElement" id="email" placeholder="Enter Your Email" name="email" value=""/>
                     <textarea required type="text" class="formElement" id="message" placeholder="Enter Your Message" name="message" value=""></textarea>
                     <input type="submit" value="Send Message" class="sendMail">
                 </form>
@@ -125,3 +126,13 @@
 
 }
 </style>
+<script>
+function mailSent(){
+    swal(
+        'Subscribed to Newsletter ',
+        'Your email was subscribed to our newsletter',
+        'success'
+      )
+}
+
+</script>

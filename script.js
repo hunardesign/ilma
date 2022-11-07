@@ -45,7 +45,7 @@ $.get("../eventComponent.html", function(data){
 });
 
 /* Replacing div with code which allows reusability */ 
-$.get("../contactComponent.php", function(data){
+$.get("../contactComponent.html", function(data){
   $(".contactSection").replaceWith(data);
 });
 
@@ -64,6 +64,7 @@ window.addEventListener('scroll', scrollValue);
 
 /* Function to showcase subscription of newsletter*/ 
 function mailSent(){
+  console.log("Trying to say this");
     swal(
         'Subscribed to Newsletter ',
         'Your email was subscribed to our newsletter',
