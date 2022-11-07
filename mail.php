@@ -28,8 +28,8 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'ilma.hunardesign.in';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'contact';                     //SMTP username
-    $mail->Password   = 'YnyG[N59OAAt';                               //SMTP password
+    $mail->Username   = 'contact@ilma.hunardesign.in';                     //SMTP username
+    $mail->Password   = 'bhojak11it03';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
