@@ -45,7 +45,7 @@ $.get("../eventComponent.html", function(data){
 });
 
 /* Replacing div with code which allows reusability */ 
-$.get("../contactComponent.html", function(data){
+$.get("../contactComponent.php", function(data){
   $(".contactSection").replaceWith(data);
 });
 
