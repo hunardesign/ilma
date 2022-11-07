@@ -55,10 +55,10 @@ try {
             history.back()
         </script>';
 } catch (Exception $e) {
-     echo
-        '<script type="text/javascript">
-            confirm("Error Sending mail try again later")
-            history.back()
-        </script>';
-    //echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    //  echo
+    //     '<script type="text/javascript">
+    //         confirm("Error Sending mail try again later")
+    //         history.back()
+    //     </script>';
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
