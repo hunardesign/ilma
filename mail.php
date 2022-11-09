@@ -7,7 +7,7 @@ $email= $_POST['email'];
 $message= $_POST['message'];
 $to = "99sbhojak@gmail.com";
 // $cc = '';  
-$subject = "Mail From ".$name;
+$subject = "New Inquiry From ".$name;
 
 $headers = "From: contact@ilma.hunardesign.in" . "\r\n";
 //Import PHPMailer classes into the global namespace
@@ -45,7 +45,7 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = $subject;
-    $mail->Body    = " Name : ". $name ."\r\n Number : " . $number . "\r\n Email : " . $email . "\r\n Message : " . $message  ;;
+    $mail->Body    = " Name : ". $name ."\r\n Number : " . $number . "\r\n Email : " . $email . "\r\n Message : " . $message  ;
     // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();

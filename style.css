@@ -497,11 +497,195 @@ background-color: #9E6000;
 }
 
 @media screen and (max-width: 1600px) {
-    
+    .heroSection{
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+
+    }
+    .ilmaLogoLarge{
+        width: 6.5vw;
+    }
+    .IlmaFullform{
+        font-size: 2.8vw;
+        width: 35vw;
+    }
+    .heroContent{
+        padding: 2vw;
+    }
+    .subSection{
+        padding: 2vw 0vw;
+    }
+    .applicationContainer{
+        width: 85vw;
+    }
+    .applicationTitle{
+        font-size: 2vw;
+    }
+    .applicationText{
+        font-size: 1vw;
+    }
+    .learnMore{
+        font-size: 1vw;
+    }
+    .testimonailProfile{
+        padding: 2.5vw;
+    }
+    .testimonialText{
+        padding: 2.5vw;
+    }
+    .testmonialName,.testimonialTextTitle{
+        font-size: 1.5vw;
+    }
+    .testimonialCompany,.testimonialTextSub{
+        font-size: 1vw;
+    }
+    .sectionText{
+        font-size: 1vw;
+    }
+    .person{
+        height: 25vw;
+        width: 20vw;
+    }
+    .personName{
+        font-size: 1.5vw;
+
+    }
+    .personPosition{
+        font-size: 1vw;
+    }
+    .missionObjectiveTitle{
+        font-size: 2.2vw;
+    }
+    .missionObjectiveSub{
+        font-size: 1vw;
+    }
+   
 }
 
 @media screen and (max-width: 991px) {
+    .bottomGoldLine{
+        width: 5.5vw;
+    }
+    .mobile15{
+        margin-top: 5vw;
+      }
+    .sectionTitle{
+        font-size: 4vw;
+    }
+    .heroSection{
+        height: 50vh;
+        background-size: cover;
+        background-position: right;
+    }
+    .ilmaLogoLarge{
+        width: 12vw;
+    }
+    .IlmaFullform{
+        font-size: 5vw;
+        width: 65vw;
+    }
+    .heroContent{
+        padding: 5vw;
+    }
+    .subSection{
+        padding: 2vw 0vw;
+    }
+    .applicationContainer{
+        width: 85vw;
+        display: grid;
+        grid-template-columns: auto auto;
+        /* outline: 1px dashed red; */
+    }
+    .applicationCard{
+        width: 40vw;
+    }
+    .applicationImageContainer{
+        width: 40vw;
+        height: 20vh;
+    }
+    .applicationImage{
+        width: 40vw;
+        height: 20vh;
+    }
+    .applicationTitle{
+        font-size: 2.5vw;
+    }
+    .applicationText{
+        font-size: 1.5vw;
+    }
+    .learnMore{
+        font-size: 1.5vw;
+    }
+    .testimonailProfile{
+        padding: 3vw;
+    }
+    .testimonialText{
+        padding: 3vw;
+    }
+    .testmonialName,.testimonialTextTitle{
+        font-size: 1.5vw;
+        
+    }
+    .testmonialName{
+        width: max-content;
+    }
+    .testimonialCompany,.testimonialTextSub{
+        font-size: 1vw;
+    }
+    .sectionText{
+        font-size: 1vw;
+    }
+    textarea,input[type="email" i],input[type="text" i],input[type="number" i] {
+        width: 32vw;
+        height: 4vw;
+        font-size: 1.2vw;
+        padding: 2%;
+       
+    }
+    textarea{
+        height: 8vw;
+    }
+    .sendMail{
+        width: 32vw;
+    }
+    .sectionText{
+        font-size: 1.25vw;
+        width: 40vw;
+    }
+    .subscribeButton{
+        font-size: 1.25vw;
+    }
+    .personContainer{
+        grid-template-columns: auto auto auto;
+    }
+    .person{
+        height: 30vw;
+        width: 25vw;
+    }
+    .personName{
+        font-size: 2vw;
 
+    }
+    .personPosition{
+        font-size: 1.5vw;
+    }
+    .missionObjectiveTitle{
+        font-size: 3vw;
+    }
+    .missionObjectiveSub{
+        font-size: 1.65vw;
+        width: 60vw;
+    }
+    .missionContainer{
+        flex-direction: column;
+    }
+    .missionObjectiveCard{
+        width: 80vw;
+    }
+    .objectiveContainer{
+        grid-template-columns: auto;
+    }
 }
 
 @media screen and (max-width: 550px) {

@@ -82,7 +82,35 @@
 .aboutNumbersHeader{
     font-size: 3.5vw;
 }
+@media screen and (max-width: 991px) {
+     .aboutSub{
+        background-color: black;
+        /* background-image: url('../assets/aboutPhoto.webp'),linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1)); */
+        background-position: center;
+        background-size: contain !important;
+        flex-direction: column-reverse;
+        justify-content: end;
+        align-items: center;
+        height: 58vh;
+     }
+     .aboutText{
+        font-size: 2vw;
+    }
+    .aboutNumbersHeader{
+        font-size: 5vw;
+    }
+}
 
+@media screen and (max-width: 1600px) {
+    .aboutText{
+        width: 85vw;
+        /* font-size: 1.8vw; */
+    }
+    .aboutSub{
+        background-size: cover;
+        background-position: top;
+    }
+}
 @media screen and (max-width: 550px) {
     .aboutSub{
         background-color: black;

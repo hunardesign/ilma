@@ -32,6 +32,8 @@
 .eventContainer{
     display: flex;
     gap: 4vw;
+    transition: 300ms ease-in;
+
 }
 .eventImageContainer{
     height: 40vh;
@@ -80,6 +82,24 @@
     cursor: url('../assets/viewCursor.svg'),auto;
 
 
+}
+@media screen and (max-width: 1600px) {
+    .eventTitle{
+        font-size: 2.5vw;
+    }
+    .eventDate{
+        font-size: 1.5vw;
+    }
+}
+@media screen and (max-width: 1600px) {
+    /* .eventContainer{
+
+        outline: dashed red 1px;
+    } */
+    .eventImageContainer{
+        width: 40vw;
+        height: 30vw;
+    }
 }
 @media screen and (max-width: 550px) {
     .eventContainer{
