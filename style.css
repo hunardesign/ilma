@@ -317,6 +317,7 @@ input[type="email" i]{
     align-items: center;
 }
 .testmonialName{
+    width: max-content;
     color:white;
     font-size: 1vw;
 }
@@ -498,7 +499,7 @@ background-color: #9E6000;
 
 @media screen and (max-width: 1600px) {
     .heroSection{
-        height: 50vh;
+        height: 65vh;
         background-size: cover;
         background-position: center;
 
@@ -599,14 +600,15 @@ background-color: #9E6000;
     }
     .applicationCard{
         width: 40vw;
+        
     }
     .applicationImageContainer{
         width: 40vw;
-        height: 20vh;
+        height: 40vh;
     }
     .applicationImage{
         width: 40vw;
-        height: 20vh;
+        height: 40vh;
     }
     .applicationTitle{
         font-size: 2.5vw;
@@ -715,12 +717,13 @@ background-color: #9E6000;
     }
     
     .applicationContainer{
-        flex-direction: column;
+        grid-template-columns: auto;
         width: 80vw;
         gap: 5vw;
     }
     .applicationCard{
         width: 80vw;
+        
     }
     .applicationContent{
         gap: 4vw;
