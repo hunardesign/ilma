@@ -16,7 +16,11 @@
 
 @font-face {
     font-family: DM;
-    src: url(fonts/DMSerifDisplay-Regular.ttf);
+    src: url("/fonts/DMSerifDisplay-Regular.ttf");
+}
+@font-face{
+    font-family: interzum;
+    src: url("/fonts/interzum.ttf");
 }
 .slideupAnimation{
     animation: slideUp 750ms ease-in-out;
@@ -63,10 +67,9 @@ body{
 
 .heroSection{
     transition: 600ms ease-in;
-
     background: url("/assets/HeroImage.webp");
-    height: 80vh;
-    background-size: contain;
+    height: 75vh;
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items:flex-end;
@@ -84,9 +87,71 @@ body{
     
 }
 
-
+.flex{
+    display: flex;
+    gap: 3vw;
+}
 .ilmaLogoLarge{
     width: 10vw;
+}
+.interzumFont{
+    font-family:interzum ;
+}
+.InterZumLogoLarge{
+    width: 7vw;
+}
+.interzum{
+    color: white;
+    background: black;
+    width: 100vw;
+    padding: 2% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.interzumTitle{
+    display: flex;
+    align-items: flex-start;
+    /* flex-direction: column; */
+    gap: 2vw;
+}
+.interzumContent{
+    display: flex;
+    flex-direction: column;
+}
+.center{
+    display: grid;
+    place-content: center;
+    width: 10vw;
+    font-size: 1vw;
+    opacity: 0.8;
+}
+.interzumPrimary{
+    cursor: pointer;
+    padding: 2% 4%;
+    color: white;
+    background: #FF1C27;
+    transition: 300ms ease-in;
+}
+.center:hover{
+    opacity: 1;
+}
+
+.interzumButtons{
+    display: flex;
+    align-items: center;
+}
+.visa{
+    transition: 300ms ease-in;
+    cursor: pointer;
+    padding: 2% 4%;
+}
+.secondTitle{
+    font-size:1.5vw;
+}
+.thirdTitle{
+    font-size:1vw;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .IlmaFullform{
@@ -117,7 +182,9 @@ a:hover{
     /* outline: 10px solid black; */
     
 }
-
+.interTitle{
+    font-size: 2vw;
+}
 .sectionTitle{
     font-size: 2vw;
     font-family: DM;
@@ -479,7 +546,7 @@ background-color: #9E6000;
     padding: 4vw;
     height: 75vh;
     width: 100vw;
-    background-size: contain;
+    background-size: cover;
     background: url(../assets/sixthSept22.webp);
 }
 .eventCardTitle{
@@ -496,8 +563,13 @@ background-color: #9E6000;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.6);
 }
-
+.mobile15{
+    margin-top: 2vw;
+  }
 @media screen and (max-width: 1600px) {
+    .InterZumLogoLarge{
+        width: 5vw;
+    }
     .heroSection{
         height: 65vh;
         background-size: cover;
@@ -565,6 +637,10 @@ background-color: #9E6000;
 }
 
 @media screen and (max-width: 991px) {
+
+    .InterZumLogoLarge{
+        width: 22vw;
+    }
     .bottomGoldLine{
         width: 5.5vw;
     }
@@ -691,7 +767,38 @@ background-color: #9E6000;
 }
 
 @media screen and (max-width: 550px) {
-    .mobile15{
+    .interzum{
+        flex-direction: column;
+        gap: 5vw;
+        padding: 5% !important;
+    }
+    .interzumTitle{
+        gap:2vw;
+        width: 100%;
+    }
+    .interTitle{
+        font-size: 6vw;
+        
+    }
+    .secondTitle{
+        font-size: 4vw;
+    }
+    .thirdTitle{
+        font-size: 4vw;
+    }
+    .interzumButtons{
+     width: 100%;   
+     justify-content: space-evenly;
+     flex-direction: column;
+     gap: 2vw;
+    }
+    .center{
+        
+        width: 90vw;
+        font-size: 3vw;
+        
+    }
+    .push15{
         margin-top: 15vw;
       }
     .heroSection{

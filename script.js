@@ -48,7 +48,14 @@ $.get("../eventComponent.html", function(data){
 $.get("../contactComponent.html", function(data){
   $(".contactSection").replaceWith(data);
 });
+function interzum(){
+  window.open("https://www.interzum.com/en/trade-fair/interzum-2023/tickets/buy-tickets/");
 
+}
+
+function visa(){
+  window.open("https://www.interzum.com/en/trade-fair/travel-and-accommodation/visa-support/");
+}
 /*Changing Navbar based on scroll location*/ 
 function scrollValue() {
     var navbar = document.getElementById('navbar');
