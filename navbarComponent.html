@@ -11,7 +11,7 @@
             <div class="events links"><a href="/events">Events</a></div>
             <div class="contact links"><a href="/contact">Contact</a></div>
             <div class="newsletter links" onclick="hideMenu()"><a href="/#newsletter">Newsletter</a></div>
-            <div class="membership links"><a href="/membership">Membership</a></div>
+            <div class="membership links"><a href="/membership" class="white">Membership</a></div>
     </div>               
         <div class="menu"><a href="javascript:void(0);" class="icon" onclick="hideMenu()"><img src="/../assets/menu.svg" class="menuIcon"></a></div>
 </div>
@@ -65,7 +65,8 @@
         margin-right: 21%;
    }
    .navbuttons a {
-        color : rgba(255, 255, 255, 0.8);
+        transition: 250ms ease-in;
+        color : rgba(255, 255, 255, 0.6);
         font-weight: 400;
     }
     .navbuttons a:hover {
@@ -84,6 +85,7 @@
         width: 5.2vw !important;
    }
    .membership{
+        transition: 250 ease-in;
         background: var(--primary);  
         
    }
@@ -154,6 +156,7 @@
         width: 60vw;
         text-align: center;
     }
+   
     }
 </style>
 <script>

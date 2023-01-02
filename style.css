@@ -989,3 +989,9 @@ background-color: #9E6000;
         font-size: 3vw;
     }
 }
+.membership a{
+    transition: 300ms ease-in;
+}
+.white{
+    color: white !important;
+}

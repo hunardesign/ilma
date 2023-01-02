@@ -1,26 +1,13 @@
-
-
 function run(){
-    console.log('function Called')
-    // $('.content').imagesLoaded({ background: true }, function() {
-    //     console.log('images loaded')
-    //     setTimeout(removeLoader, 1500);
-    //   });
-    imagesLoaded( document.querySelector('.content'), function( instance ) {
-        console.log('all images are loaded');
-        setTimeout(removeLoader, 2000);
-      });
- }
+  $(window).on('load',function(){
+    setTimeout(function () {
+      $('.loader').hide();
+      $('.content').fadeIn();
+    }, 1500);
+   }); 
+} 
 
- function removeLoader(){
-    
-    let loader = document.querySelector(".loader");
-    let content = document.querySelector(".content");
-    console.log("Removing Loader");
-    loader.style.display = 'none' 
-    content.style.display = 'block';
-    
-}
+
 /* Replacing div with code which allows reusability */ 
 
 $.get("../navbarComponent.html", function(data){
@@ -127,3 +114,19 @@ const events = new IntersectionObserver(entries => {
     });
   });
 events.observe(document.querySelector('.slideMeUp-Wrapper'));
+
+barba.init({
+  transitions: [{
+    name: 'opacity-transition',
+    leave(data) {
+      return gsap.to(data.current.container, {
+        opacity: 0
+      });
+    },
+    enter(data) {
+      return gsap.from(data.next.container, {
+        opacity: 0
+      });
+    }
+  }]
+});
