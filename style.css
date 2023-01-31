@@ -491,13 +491,33 @@ background-color: #9E6000;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.RKVyas{
-    background: url("assets/R\ K\ Vyas.webp");
+.JikeshThakkar{
+    background: url("assets/Jikesh\ Thakkar.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
-.KhusbooModi{
-    background: url("assets/Khusboo\ Modi.webp");
+.JitendraPatel{
+    background: url("assets/Jitendra\ Patel.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.RajPatel{
+    background: url("assets/Raj\ Patel.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.RushilThakkar{
+    background: url("assets/Rushil\ Thakkar.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.VishalDokania{
+    background: url("assets/Vishal\ Dokania.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.RakeshAgarwal{
+    background: url("assets/Rakesh\ Agarwal.webp");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -566,6 +586,37 @@ background-color: #9E6000;
 .mobile15{
     margin-top: 2vw;
   }
+
+  .membership a{
+    transition: 300ms ease-in;
+}
+.white{
+    color: white !important;
+}
+
+.interzumSubtext{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25vw;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    color: rgba(255, 255, 255, 0.6);
+    background: #000000;
+    padding-bottom: 1vw;
+}
+a:hover{
+    color: inherit;
+}
+.interzumSubtext .learnMore{
+    font-style: italic;
+}
+.interzumSubtext .learnMore:hover{
+    color: white;
+}
+.isubtext{
+    width: 70vw;
+}
 @media screen and (max-width: 1600px) {
     .InterZumLogoLarge{
         width: 5vw;
@@ -771,7 +822,11 @@ background-color: #9E6000;
         flex-direction: column;
         margin-top: 0%;
         padding: 0% 5% 5% 5%;
+        align-items: flex-start !important; 
         /* height: max-content; */
+    }
+    .isubtext{
+        width: 80vw;
     }
     .interzum{
         flex-direction: column;
@@ -994,31 +1049,4 @@ background-color: #9E6000;
     .eventCardDate{
         font-size: 3vw;
     }
-}
-.membership a{
-    transition: 300ms ease-in;
-}
-.white{
-    color: white !important;
-}
-
-.interzumSubtext{
-    display: flex;
-    gap: 0.25vw;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    /* height: 2vw; */
-    color: rgba(255, 255, 255, 0.6);
-    background: #000000;
-    padding-bottom: 1vw;
-}
-a:hover{
-    color: inherit;
-}
-.interzumSubtext .learnMore{
-    font-style: italic;
-}
-.interzumSubtext .learnMore:hover{
-    color: white;
 }
