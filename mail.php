@@ -5,7 +5,7 @@ $name = $_POST['name'];
 $number = $_POST['number'];
 $email= $_POST['email'];
 $message= $_POST['message'];
-$to = "99sbhojak@gmail.com";
+
 // $cc = '';  
 $subject = "New Inquiry From ".$name;
 
@@ -34,8 +34,8 @@ try {
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('contact@ilma.hunardesign.in', 'ILMA');
-    $mail->addAddress('bhojaksmith00@gmail.com', 'Smith Bhojak');     //Add a recipient //Name is optional
+    $mail->setFrom('ilma@live.in', 'ILMA');
+    $mail->addAddress('ilma@live.in', 'ILMA');     //Add a recipient //Name is optional
     
 
     // //Attachments
